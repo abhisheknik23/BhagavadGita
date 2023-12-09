@@ -7,6 +7,7 @@
 
 import SwiftUI
 import CoreData
+import SwiftyBeaver
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
@@ -37,6 +38,9 @@ struct ContentView: View {
                         Label("Add Item", systemImage: "plus")
                     }
                 }
+            }
+            .onAppear {
+                
             }
             Text("Select an item")
         }

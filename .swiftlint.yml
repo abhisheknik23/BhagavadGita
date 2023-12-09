@@ -1,0 +1,2 @@
+opt_in_rules: # some rules are turned off by default, so you need to opt-in
+  - force_unwrapping # find all the available rules by running: `swiftlint rules`

@@ -16,6 +16,9 @@
 		770B89EA2B03E8790017D007 /* BhagavadGitaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770B89E92B03E8790017D007 /* BhagavadGitaTests.swift */; };
 		770B89F42B03E8790017D007 /* BhagavadGitaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770B89F32B03E8790017D007 /* BhagavadGitaUITests.swift */; };
 		770B89F62B03E8790017D007 /* BhagavadGitaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770B89F52B03E8790017D007 /* BhagavadGitaUITestsLaunchTests.swift */; };
+		770B8A042B03F8AB0017D007 /* BGUtility in Frameworks */ = {isa = PBXBuildFile; productRef = 770B8A032B03F8AB0017D007 /* BGUtility */; };
+		774BD8712B04D4230044522A /* SwiftLintDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BD8702B04D4230044522A /* SwiftLintDemo.swift */; };
+		7789DFDE2B24AB5400C4889D /* SwiftyBeaver in Frameworks */ = {isa = PBXBuildFile; productRef = 7789DFDD2B24AB5400C4889D /* SwiftyBeaver */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,7 @@
 		770B89EF2B03E8790017D007 /* BhagavadGitaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BhagavadGitaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		770B89F32B03E8790017D007 /* BhagavadGitaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BhagavadGitaUITests.swift; sourceTree = "<group>"; };
 		770B89F52B03E8790017D007 /* BhagavadGitaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BhagavadGitaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		774BD8702B04D4230044522A /* SwiftLintDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLintDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				770B8A042B03F8AB0017D007 /* BGUtility in Frameworks */,
+				7789DFDE2B24AB5400C4889D /* SwiftyBeaver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +110,7 @@
 				770B89DC2B03E8780017D007 /* Persistence.swift */,
 				770B89DE2B03E8780017D007 /* BhagavadGita.xcdatamodeld */,
 				770B89D92B03E8780017D007 /* Preview Content */,
+				774BD8702B04D4230044522A /* SwiftLintDemo.swift */,
 			);
 			path = BhagavadGita;
 			sourceTree = "<group>";
@@ -140,6 +147,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 770B89F92B03E8790017D007 /* Build configuration list for PBXNativeTarget "BhagavadGita" */;
 			buildPhases = (
+				774BD86F2B04B7390044522A /* SwfitLint */,
 				770B89CC2B03E8770017D007 /* Sources */,
 				770B89CD2B03E8770017D007 /* Frameworks */,
 				770B89CE2B03E8770017D007 /* Resources */,
@@ -149,6 +157,10 @@
 			dependencies = (
 			);
 			name = BhagavadGita;
+			packageProductDependencies = (
+				770B8A032B03F8AB0017D007 /* BGUtility */,
+				7789DFDD2B24AB5400C4889D /* SwiftyBeaver */,
+			);
 			productName = BhagavadGita;
 			productReference = 770B89D02B03E8770017D007 /* BhagavadGita.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +233,10 @@
 				Base,
 			);
 			mainGroup = 770B89C72B03E8770017D007;
+			packageReferences = (
+				770B8A022B03F8AB0017D007 /* XCRemoteSwiftPackageReference "BGUtility" */,
+				7789DFDC2B24AB5400C4889D /* XCRemoteSwiftPackageReference "SwiftyBeaver" */,
+			);
 			productRefGroup = 770B89D12B03E8770017D007 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,6 +274,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		774BD86F2B04B7390044522A /* SwfitLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwfitLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		770B89CC2B03E8770017D007 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -266,6 +303,7 @@
 				770B89E02B03E8780017D007 /* BhagavadGita.xcdatamodeld in Sources */,
 				770B89DD2B03E8780017D007 /* Persistence.swift in Sources */,
 				770B89D62B03E8770017D007 /* ContentView.swift in Sources */,
+				774BD8712B04D4230044522A /* SwiftLintDemo.swift in Sources */,
 				770B89D42B03E8770017D007 /* BhagavadGitaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +470,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BhagavadGita/Preview Content\"";
 				DEVELOPMENT_TEAM = 2ZER7K53MY;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -461,6 +500,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BhagavadGita/Preview Content\"";
 				DEVELOPMENT_TEAM = 2ZER7K53MY;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -596,6 +636,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		770B8A022B03F8AB0017D007 /* XCRemoteSwiftPackageReference "BGUtility" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/abhisheknik23/BGUtility";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		7789DFDC2B24AB5400C4889D /* XCRemoteSwiftPackageReference "SwiftyBeaver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyBeaver/SwiftyBeaver";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		770B8A032B03F8AB0017D007 /* BGUtility */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 770B8A022B03F8AB0017D007 /* XCRemoteSwiftPackageReference "BGUtility" */;
+			productName = BGUtility;
+		};
+		7789DFDD2B24AB5400C4889D /* SwiftyBeaver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7789DFDC2B24AB5400C4889D /* XCRemoteSwiftPackageReference "SwiftyBeaver" */;
+			productName = SwiftyBeaver;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		770B89DE2B03E8780017D007 /* BhagavadGita.xcdatamodeld */ = {
