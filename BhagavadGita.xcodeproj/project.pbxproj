@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		770B89D42B03E8770017D007 /* BhagavadGitaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770B89D32B03E8770017D007 /* BhagavadGitaApp.swift */; };
-		770B89D62B03E8770017D007 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770B89D52B03E8770017D007 /* ContentView.swift */; };
 		770B89D82B03E8780017D007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 770B89D72B03E8780017D007 /* Assets.xcassets */; };
 		770B89DB2B03E8780017D007 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 770B89DA2B03E8780017D007 /* Preview Assets.xcassets */; };
 		770B89DD2B03E8780017D007 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770B89DC2B03E8780017D007 /* Persistence.swift */; };
@@ -19,6 +18,11 @@
 		770B8A042B03F8AB0017D007 /* BGUtility in Frameworks */ = {isa = PBXBuildFile; productRef = 770B8A032B03F8AB0017D007 /* BGUtility */; };
 		774BD8712B04D4230044522A /* SwiftLintDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BD8702B04D4230044522A /* SwiftLintDemo.swift */; };
 		7789DFDE2B24AB5400C4889D /* SwiftyBeaver in Frameworks */ = {isa = PBXBuildFile; productRef = 7789DFDD2B24AB5400C4889D /* SwiftyBeaver */; };
+		77EAD32D2B270E2900E4A790 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EAD32A2B270E2900E4A790 /* ContentViewModel.swift */; };
+		77EAD32E2B270E2900E4A790 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EAD32C2B270E2900E4A790 /* ContentView.swift */; };
+		77EAD3342B270E8300E4A790 /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EAD3312B270E8300E4A790 /* Injection.swift */; };
+		77EAD3352B270E8300E4A790 /* BGLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EAD3322B270E8300E4A790 /* BGLogger.swift */; };
+		77EAD3382B270F0E00E4A790 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 77EAD3372B270F0E00E4A790 /* Swinject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +45,6 @@
 /* Begin PBXFileReference section */
 		770B89D02B03E8770017D007 /* BhagavadGita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BhagavadGita.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		770B89D32B03E8770017D007 /* BhagavadGitaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BhagavadGitaApp.swift; sourceTree = "<group>"; };
-		770B89D52B03E8770017D007 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		770B89D72B03E8780017D007 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		770B89DA2B03E8780017D007 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		770B89DC2B03E8780017D007 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -52,6 +55,10 @@
 		770B89F32B03E8790017D007 /* BhagavadGitaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BhagavadGitaUITests.swift; sourceTree = "<group>"; };
 		770B89F52B03E8790017D007 /* BhagavadGitaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BhagavadGitaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		774BD8702B04D4230044522A /* SwiftLintDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLintDemo.swift; sourceTree = "<group>"; };
+		77EAD32A2B270E2900E4A790 /* ContentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		77EAD32C2B270E2900E4A790 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		77EAD3312B270E8300E4A790 /* Injection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
+		77EAD3322B270E8300E4A790 /* BGLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGLogger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +68,7 @@
 			files = (
 				770B8A042B03F8AB0017D007 /* BGUtility in Frameworks */,
 				7789DFDE2B24AB5400C4889D /* SwiftyBeaver in Frameworks */,
+				77EAD3382B270F0E00E4A790 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +113,10 @@
 			isa = PBXGroup;
 			children = (
 				770B89D32B03E8770017D007 /* BhagavadGitaApp.swift */,
-				770B89D52B03E8770017D007 /* ContentView.swift */,
+				77EAD32B2B270E2900E4A790 /* View */,
+				77EAD3292B270E2900E4A790 /* ViewModel */,
+				77EAD3322B270E8300E4A790 /* BGLogger.swift */,
+				77EAD3312B270E8300E4A790 /* Injection.swift */,
 				770B89D72B03E8780017D007 /* Assets.xcassets */,
 				770B89DC2B03E8780017D007 /* Persistence.swift */,
 				770B89DE2B03E8780017D007 /* BhagavadGita.xcdatamodeld */,
@@ -140,6 +151,22 @@
 			path = BhagavadGitaUITests;
 			sourceTree = "<group>";
 		};
+		77EAD3292B270E2900E4A790 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				77EAD32A2B270E2900E4A790 /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		77EAD32B2B270E2900E4A790 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				77EAD32C2B270E2900E4A790 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,6 +187,7 @@
 			packageProductDependencies = (
 				770B8A032B03F8AB0017D007 /* BGUtility */,
 				7789DFDD2B24AB5400C4889D /* SwiftyBeaver */,
+				77EAD3372B270F0E00E4A790 /* Swinject */,
 			);
 			productName = BhagavadGita;
 			productReference = 770B89D02B03E8770017D007 /* BhagavadGita.app */;
@@ -236,6 +264,7 @@
 			packageReferences = (
 				770B8A022B03F8AB0017D007 /* XCRemoteSwiftPackageReference "BGUtility" */,
 				7789DFDC2B24AB5400C4889D /* XCRemoteSwiftPackageReference "SwiftyBeaver" */,
+				77EAD3362B270F0E00E4A790 /* XCRemoteSwiftPackageReference "Swinject" */,
 			);
 			productRefGroup = 770B89D12B03E8770017D007 /* Products */;
 			projectDirPath = "";
@@ -302,9 +331,12 @@
 			files = (
 				770B89E02B03E8780017D007 /* BhagavadGita.xcdatamodeld in Sources */,
 				770B89DD2B03E8780017D007 /* Persistence.swift in Sources */,
-				770B89D62B03E8770017D007 /* ContentView.swift in Sources */,
+				77EAD32E2B270E2900E4A790 /* ContentView.swift in Sources */,
 				774BD8712B04D4230044522A /* SwiftLintDemo.swift in Sources */,
 				770B89D42B03E8770017D007 /* BhagavadGitaApp.swift in Sources */,
+				77EAD3352B270E8300E4A790 /* BGLogger.swift in Sources */,
+				77EAD3342B270E8300E4A790 /* Injection.swift in Sources */,
+				77EAD32D2B270E2900E4A790 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -654,6 +686,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		77EAD3362B270F0E00E4A790 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.4;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -666,6 +706,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7789DFDC2B24AB5400C4889D /* XCRemoteSwiftPackageReference "SwiftyBeaver" */;
 			productName = SwiftyBeaver;
+		};
+		77EAD3372B270F0E00E4A790 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77EAD3362B270F0E00E4A790 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
 		};
 /* End XCSwiftPackageProductDependency section */
 
