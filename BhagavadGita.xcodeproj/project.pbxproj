@@ -16,8 +16,10 @@
 		770B89F42B03E8790017D007 /* BhagavadGitaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770B89F32B03E8790017D007 /* BhagavadGitaUITests.swift */; };
 		770B89F62B03E8790017D007 /* BhagavadGitaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770B89F52B03E8790017D007 /* BhagavadGitaUITestsLaunchTests.swift */; };
 		770B8A042B03F8AB0017D007 /* BGUtility in Frameworks */ = {isa = PBXBuildFile; productRef = 770B8A032B03F8AB0017D007 /* BGUtility */; };
+		773BF5442B7154BA009D0EC7 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773BF5432B7154BA009D0EC7 /* Strings+Generated.swift */; };
 		774BD8712B04D4230044522A /* SwiftLintDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BD8702B04D4230044522A /* SwiftLintDemo.swift */; };
 		7789DFDE2B24AB5400C4889D /* SwiftyBeaver in Frameworks */ = {isa = PBXBuildFile; productRef = 7789DFDD2B24AB5400C4889D /* SwiftyBeaver */; };
+		77C228942B70DDDC00466637 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77C228962B70DDDC00466637 /* Localizable.strings */; };
 		77EAD32D2B270E2900E4A790 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EAD32A2B270E2900E4A790 /* ContentViewModel.swift */; };
 		77EAD32E2B270E2900E4A790 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EAD32C2B270E2900E4A790 /* ContentView.swift */; };
 		77EAD3342B270E8300E4A790 /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EAD3312B270E8300E4A790 /* Injection.swift */; };
@@ -54,7 +56,10 @@
 		770B89EF2B03E8790017D007 /* BhagavadGitaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BhagavadGitaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		770B89F32B03E8790017D007 /* BhagavadGitaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BhagavadGitaUITests.swift; sourceTree = "<group>"; };
 		770B89F52B03E8790017D007 /* BhagavadGitaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BhagavadGitaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		773BF53F2B70E33D009D0EC7 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		773BF5432B7154BA009D0EC7 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = SOURCE_ROOT; };
 		774BD8702B04D4230044522A /* SwiftLintDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLintDemo.swift; sourceTree = "<group>"; };
+		77C228952B70DDDC00466637 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		77EAD32A2B270E2900E4A790 /* ContentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		77EAD32C2B270E2900E4A790 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		77EAD3312B270E8300E4A790 /* Injection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
@@ -112,6 +117,7 @@
 		770B89D22B03E8770017D007 /* BhagavadGita */ = {
 			isa = PBXGroup;
 			children = (
+				773BF5432B7154BA009D0EC7 /* Strings+Generated.swift */,
 				770B89D32B03E8770017D007 /* BhagavadGitaApp.swift */,
 				77EAD32B2B270E2900E4A790 /* View */,
 				77EAD3292B270E2900E4A790 /* ViewModel */,
@@ -122,6 +128,7 @@
 				770B89DE2B03E8780017D007 /* BhagavadGita.xcdatamodeld */,
 				770B89D92B03E8780017D007 /* Preview Content */,
 				774BD8702B04D4230044522A /* SwiftLintDemo.swift */,
+				77C228962B70DDDC00466637 /* Localizable.strings */,
 			);
 			path = BhagavadGita;
 			sourceTree = "<group>";
@@ -178,6 +185,7 @@
 				770B89CC2B03E8770017D007 /* Sources */,
 				770B89CD2B03E8770017D007 /* Frameworks */,
 				770B89CE2B03E8770017D007 /* Resources */,
+				773BF5422B712FB1009D0EC7 /* SwiftGen */,
 			);
 			buildRules = (
 			);
@@ -259,6 +267,7 @@
 			knownRegions = (
 				en,
 				Base,
+				hi,
 			);
 			mainGroup = 770B89C72B03E8770017D007;
 			packageReferences = (
@@ -283,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				770B89DB2B03E8780017D007 /* Preview Assets.xcassets in Resources */,
+				77C228942B70DDDC00466637 /* Localizable.strings in Resources */,
 				770B89D82B03E8780017D007 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +314,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		773BF5422B712FB1009D0EC7 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftgen >/dev/null; then\n  swiftgen\nelse\n  echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
+		};
 		774BD86F2B04B7390044522A /* SwfitLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -331,6 +359,7 @@
 			files = (
 				770B89E02B03E8780017D007 /* BhagavadGita.xcdatamodeld in Sources */,
 				770B89DD2B03E8780017D007 /* Persistence.swift in Sources */,
+				773BF5442B7154BA009D0EC7 /* Strings+Generated.swift in Sources */,
 				77EAD32E2B270E2900E4A790 /* ContentView.swift in Sources */,
 				774BD8712B04D4230044522A /* SwiftLintDemo.swift in Sources */,
 				770B89D42B03E8770017D007 /* BhagavadGitaApp.swift in Sources */,
@@ -372,12 +401,25 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		77C228962B70DDDC00466637 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77C228952B70DDDC00466637 /* en */,
+				773BF53F2B70E33D009D0EC7 /* hi */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		770B89F72B03E8790017D007 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -425,7 +467,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -441,6 +483,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -482,7 +525,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;

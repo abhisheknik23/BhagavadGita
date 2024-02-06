@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  BhagavadGita
+
+  Created by Abhishek Gupta on 05/02/24.
+  
+*/
+
+// ContentView
+"ContentView.bhagavad_git_chapter %@" = "भगवत गीता अध्याय %@";
+"ContentView.bhagavad_git_title" = "भगवत गीता";
+"ContentView.bhagavad" = "भगवत";

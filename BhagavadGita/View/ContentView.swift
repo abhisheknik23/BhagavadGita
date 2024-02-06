@@ -12,12 +12,16 @@ struct ContentView: View {
 
     @ObservedObject var viewModel = ContentViewModel()
 
+    var count = "1"
     var body: some View {
         NavigationView {
-            Text("Select an item")
-                .onAppear {
-                    viewModel.onAppear()
-                }
+            VStack {
+                Text(L10n.ContentView.bhagavadGitChapter(1))
+                Text("ContentView.bhagavad_git_chapter \(count)")
+            }
+            .onAppear {
+                viewModel.onAppear()
+            }
         }
     }
 

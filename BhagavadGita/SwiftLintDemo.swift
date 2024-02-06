@@ -10,6 +10,5 @@ import Foundation
 class SwiftLintDemo {
 
     init() {
-        let number = Int("12")!
     }
 }
